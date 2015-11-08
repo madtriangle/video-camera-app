@@ -1,18 +1,13 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/loginFrame"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" tools:ignore="MergeRootFrame" >
 
-    <TextView android:text="Info" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:paddingTop="16dp"
-        android:paddingLeft="16dp"
-        android:textStyle="bold"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainFrame"/>
 
-    <SurfaceView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/surfaceView" />
-
-</FrameLayout>
+</LinearLayout>
